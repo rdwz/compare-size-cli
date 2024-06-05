@@ -1,6 +1,6 @@
 {
   "name": "compare-sizes-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compare the size of two files easily 📊",
   "keywords": [
     "cli-app",
