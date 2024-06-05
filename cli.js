@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import compareSize from "compare-size"
-import meow from "meow"
-import prettyBytes from "pretty-bytes"
+import compareSize from 'compare-size'
+import meow from 'meow'
+import prettyBytes from 'pretty-bytes'
 
 const cli = meow(
 	`
@@ -21,7 +21,7 @@ const cli = meow(
 )
 
 if (cli.input.length < 2) {
-	console.error("Provide two files to compare ⚠️")
+	console.error('Provide two files to compare ⚠️')
 	process.exit(1)
 }
 
@@ -34,9 +34,9 @@ compareSize(cli.input[0], cli.input[1]).then((data) => {
 			`${cli.input[1].padEnd(Math.max(5, cli.input[0].length, cli.input[1].length))}: ${prettyBytes(
 				data[cli.input[1]],
 			)}`,
-			`${"Delta".padEnd(Math.max(5, cli.input[0].length, cli.input[1].length))}: ${prettyBytes(
+			`${'Delta'.padEnd(Math.max(5, cli.input[0].length, cli.input[1].length))}: ${prettyBytes(
 				data.difference,
 			)}`,
-		].join("\n"),
+		].join('\n'),
 	)
 })
