@@ -1,45 +1,49 @@
 {
-  "name": "compare-size-cli",
+  "name": "compare-sizes-cli",
   "version": "1.0.0",
-  "description": "Compare size between two files",
-  "license": "MIT",
-  "repository": "kevva/compare-size-cli",
-  "author": {
-    "name": "Kevin Martensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "github.com/kevva"
-  },
-  "bin": {
-    "compare-size": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
+  "description": "Compare the size of two files easily 📊",
   "keywords": [
     "cli-app",
     "cli",
     "compare",
     "file",
+    "filesize",
     "fs",
     "size"
   ],
+  "repository": "git+https://github.com/rdwz/compare-sizes-cli",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "compare-size": "cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "scripts": {
+    "test": "vitest"
+  },
   "dependencies": {
     "compare-size": "^3.0.0",
-    "meow": "^3.7.0",
-    "pretty-bytes": "^4.0.2"
+    "meow": "^13.2.0",
+    "pretty-bytes": "^6.1.1"
   },
   "devDependencies": {
-    "ava": "*",
-    "execa": "^0.4.0",
-    "xo": "*"
+    "bumpp": "^9.4.1",
+    "execa": "^9.1.0",
+    "vitest": "^1.6.0"
   },
-  "xo": {
-    "esnext": true
-  }
+  "engines": {
+    "node": ">=18"
+  },
+  "authors": [
+    {
+      "name": "Marc Redwerkz"
+    },
+    {
+      "name": "Kevin Martensson",
+      "email": "kevinmartensson@gmail.com",
+      "url": "https://github.com/kevva"
+    }
+  ]
 }
