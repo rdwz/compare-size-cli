@@ -1,6 +1,7 @@
-The MIT License (MIT)
+# The MIT License (MIT)
 
-Copyright (c) Kevin Martensson <kevinmartensson@gmail.com> (github.com/kevva)
+Copyright (c) Marc redwerkz (github.com/rdwz)
+              Kevin Martensson <kevinmartensson@gmail.com> (github.com/kevva)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
