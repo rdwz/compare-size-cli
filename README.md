@@ -1,11 +1,11 @@
-# compare-size-cli
+# compare-sizes-cli
 
 > Compare the size of two files easily 📊
 
 ## Install
 
 ```sh
-npm|bun install --global compare-size-cli
+npm|bun install --global compare-sizes-cli
 ```
 
 ## Usage
